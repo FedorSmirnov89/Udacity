@@ -82,8 +82,10 @@ class LearningAgent(Agent):
         ## TO DO ##
         ###########
         # Set 'state' as a tuple of relevant data for the agent        
-        state = (inputs['light'], inputs['oncoming'], waypoint)
-
+        if waypoint == 'right' and inputs['light'] == 'red':
+            state = (inputs['light'], inputs['oncoming'], waypoint, inputs['left'])
+        else:
+            state = (inputs['light'], inputs['oncoming'], waypoint)
         return state
 
 
@@ -139,9 +141,17 @@ class LearningAgent(Agent):
 
         # When learning, choose a random action with 'epsilon' probability
         #   Otherwise, choose an action with the highest Q-value for the current state
-        if random.uniform(0, 1.) > self.epsilon:
+        if random.uniform(0, 1.) > self.epsilon and self.learning:
             #  get the action with the biggest utility
-            action = max(self.Q[state], key=self.Q[state].get)
+            max_utility = None
+            for a in self.Q[state].keys():
+                if max_utility is None or self.Q[state][a] > max_utility:
+                    best_actions = [a]
+                    max_utility = self.Q[state][a]
+                elif self.Q[state][a] == max_utility:
+                    best_actions.append(a)
+            assert len(best_actions) >= 1
+            action = random.choice(best_actions)
         return action
 
 
@@ -155,9 +165,10 @@ class LearningAgent(Agent):
         ###########
         # When learning, implement the value iteration update rule
         #   Use only the learning rate 'alpha' (do not use the discount factor 'gamma')
-        cur_q = self.Q[state][action]
-        new_q = (1 - self.alpha) * cur_q + self.alpha * reward
-        self.Q[state][action] = new_q
+        if self.learning:
+            cur_q = self.Q[state][action]
+            new_q = (1 - self.alpha) * cur_q + self.alpha * reward
+            self.Q[state][action] = new_q
         return
 
 
@@ -208,7 +219,7 @@ def run():
     #   display      - set to False to disable the GUI if PyGame is enabled
     #   log_metrics  - set to True to log trial and simulation results to /logs
     #   optimized    - set to True to change the default log file name
-    sim = Simulator(env, update_delay=.01, log_metrics=True, optimized=True)
+    sim = Simulator(env, update_delay=.001, log_metrics=True, optimized=True)
     
     ##############
     # Run the simulator

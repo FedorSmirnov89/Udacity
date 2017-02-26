@@ -26,7 +26,7 @@ class LearningAgent(Agent):
         self.trial_number = 0
 
         # the function to use for the decaying of epsilon
-        self.eps_function = 'cos'
+        self.eps_function = 'e_power'
 
 
     def reset(self, destination=None, testing=False):
@@ -62,7 +62,7 @@ class LearningAgent(Agent):
                 a = .05
                 self.epsilon = math.pow(math.e, - a * self.trial_number)
             if self.eps_function == 'cos':
-                a = .003
+                a = .018
                 self.epsilon = math.cos(a * self.trial_number)
 
         self.trial_number += 1
@@ -82,7 +82,7 @@ class LearningAgent(Agent):
         ## TO DO ##
         ###########
         # Set 'state' as a tuple of relevant data for the agent        
-        state = (inputs['light'], inputs['left'], inputs['right'], inputs['oncoming'], waypoint)
+        state = (inputs['light'], inputs['oncoming'], waypoint)
 
         return state
 
@@ -208,14 +208,14 @@ def run():
     #   display      - set to False to disable the GUI if PyGame is enabled
     #   log_metrics  - set to True to log trial and simulation results to /logs
     #   optimized    - set to True to change the default log file name
-    sim = Simulator(env, update_delay=1, log_metrics=False, optimized=True)
+    sim = Simulator(env, update_delay=.01, log_metrics=True, optimized=True)
     
     ##############
     # Run the simulator
     # Flags:
     #   tolerance  - epsilon tolerance before beginning testing, default is 0.05 
     #   n_test     - discrete number of testing trials to perform, default is 0
-    sim.run(n_test=50, tolerance=0.00001)
+    sim.run(n_test=25, tolerance=0.01)
 
 
 if __name__ == '__main__':

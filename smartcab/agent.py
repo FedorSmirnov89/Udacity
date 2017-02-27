@@ -82,10 +82,9 @@ class LearningAgent(Agent):
         ## TO DO ##
         ###########
         # Set 'state' as a tuple of relevant data for the agent        
-        if waypoint == 'right' and inputs['light'] == 'red':
-            state = (inputs['light'], inputs['oncoming'], waypoint, inputs['left'])
-        else:
-            state = (inputs['light'], inputs['oncoming'], waypoint)
+
+        state = (inputs['light'], inputs['oncoming'], waypoint, inputs['left'])
+
         return state
 
 
@@ -226,7 +225,7 @@ def run():
     # Flags:
     #   tolerance  - epsilon tolerance before beginning testing, default is 0.05 
     #   n_test     - discrete number of testing trials to perform, default is 0
-    sim.run(n_test=25, tolerance=0.01)
+    sim.run(n_test=25, tolerance=0.0001)
 
 
 if __name__ == '__main__':

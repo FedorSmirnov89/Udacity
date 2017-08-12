@@ -1,0 +1,23 @@
+Anon Student Id : 1.0 
+Error Step Duration (sec) : 0.0 
+Opportunity(SubSkills) : 0.695204671928 
+Incorrects : 0.0 
+Problem View : 1.0 
+Opportunity(Rules) : 0.969996777439 
+Corrects : 0.0 
+First Transaction Time : 0.0 
+Step Start Time : 0.0 
+Hints : 0.0 
+KC(KTracedSkills) : 0.450252695947 
+KC(Rules) : 0.969996777439 
+Problem Name : 1.0 
+Problem Hierarchy : 1.0 
+Opportunity(KTracedSkills) : 0.450252695947 
+Step End Time : 0.0 
+Correct First Attempt : 0.0 
+Step Duration (sec) : 0.0 
+KC(SubSkills) : 0.695204671928 
+Correct Step Duration (sec) : 0.0 
+Correct Transaction Time : 0.0 
+Step Name : 1.0 
+Row : 1.0 

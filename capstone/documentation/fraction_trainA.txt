@@ -1,0 +1,21 @@
+KC(KTracedSkills) : 0.563523636849 
+Anon Student Id : 1.0 
+Incorrects : 1.0 
+Corrects : 1.0 
+Problem View : 1.0 
+Correct Transaction Time : 0.993623128295 
+Correct First Attempt : 1.0 
+Step Duration (sec) : 0.998542521371 
+Opportunity(SubSkills) : 0.619808277698 
+Correct Step Duration (sec) : 0.860245972857 
+Error Step Duration (sec) : 0.138296548514 
+Problem Name : 1.0 
+Step Start Time : 0.999495378514 
+KC(SubSkills) : 0.619808277698 
+First Transaction Time : 1.0 
+Problem Hierarchy : 1.0 
+Opportunity(KTracedSkills) : 0.563523636849 
+Hints : 1.0 
+Step End Time : 1.0 
+Step Name : 1.0 
+Row : 1.0 

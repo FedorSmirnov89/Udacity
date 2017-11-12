@@ -1,0 +1,138 @@
+\newpage
+\section{Analysis}
+
+\subsection{Data Exploration}
+
+Before approaching the actual clustering problem, the data set at hand (or rather the two data sets) have to be explored in order to answer several questions about the characteristics of the data set.
+
+\subsubsection{Split of the KDD data set}
+
+The KDD data set comes in the form of 2 different data sets containing data from different tutoring programs. The first set is called \emph{bridge\_to\_algebra\_2008\_2009}, while the second set is called \emph{algebra\_2008\_2009}. Both sets come within three files: the training file, the test file, and the submission file. The test and the submission files lack most of the data and are provided for the sake of the educational challenge submission. Within this project, I will only be working with the training parts of the two sets. For the sake of brevity, I will refer to the training set of the bridge\_to\_algebra\_2008\_2009 set as \emph{Set A}, while the training set of the algebra\_2008\_2009 will be referred to as \emph{Set B}.
+
+\subsubsection{Checking for missing attributes}
+
+Even a very important feature with great significance for the problem at hand can not be used for the solution of the problem if it is missing in most of the data entries. Consequently, the first step of the data exploration is to examine whether the features in the data set are missing in some of the entries. 
+
+I quantify this by calculating the so-called \emph{feature fraction}. Hereby, a feature that is present in every entry of the entire data set has a feature fraction of $1.0$, while a feature that is only present in every second entry has a feature fraction of $0.5$. The feature fractions of the attributes of Set A and Set B illustrated by the Figs.~\ref{tab_feature_fraction_a} and \ref{tab_feature_fraction_b} are calculated using the script \textbf{\emph{find\_feature\_fraction.py}}.
+
+\begin{figure}[h]
+		\centering
+		\caption{Feature fractions}
+		\label{fig_feature_fractions}
+		\subfloat[Set A ($20\,012\,498$ entries)]{\begin{tabular}{cl}
+				\toprule
+				Attribute name & Feature Fraction \\		
+				\midrule
+				\colorbox{cyan}{Anon Student Id} & $1.000$ \\
+				\colorbox{green}{Error Step Duration (sec)}  & $0.1383$ \\
+				\colorbox{red}{Opportunity(SubSkills)} & $0.6198$ \\
+				\colorbox{yellow}{Incorrects} & $1.000$ \\
+				\colorbox{yellow}{Problem View} & $1.000$ \\
+				\colorbox{yellow}{Corrects} & $1.000$ \\
+				\colorbox{yellow}{First Transaction Time} & $1.000$ \\
+				\colorbox{green}{Step Start Time} & $0.9995$ \\
+				\colorbox{yellow}{Hints} & $1.000$ \\
+				\colorbox{red}{KC (KTracedSkills)} & $0.5635$ \\
+				\colorbox{cyan}{Problem Name} & $1.000$ \\
+				\colorbox{cyan}{Problem Hierarchy} & $1.000$ \\
+				\colorbox{red}{Opportunity (KTracedSkills)} & $0.5635$ \\
+				\colorbox{yellow}{Step End Time} & $1.000$ \\
+				\colorbox{yellow}{Correct First Attempt} & $1.000$ \\
+				\colorbox{green}{Step Duration (sec)} & $0.9985$ \\
+				\colorbox{red}{KC(SubSkills)} & $0.6198$ \\
+				\colorbox{green}{Correct Step Duration (sec)} & $0.8602$ \\
+				\colorbox{green}{Correct Transaction Time} & $0.9936$ \\
+				\colorbox{cyan}{Step Name} & $1.000$\\
+				\bottomrule
+			\end{tabular}\label{tab_feature_fraction_a}}
+		\subfloat[Set B ($8\,918\,054$ entries)]{	\begin{tabular}{cl}
+				\toprule
+				Attribute name & Feature Fraction \\		
+				\midrule
+				\colorbox{cyan}{Anon Student Id} & $1.000$ \\
+				\colorbox{green}{Error Step Duration (sec)}  & $0.1343$ \\
+				\colorbox{red}{Opportunity(SubSkills)} & $0.7223$ \\
+				\colorbox{yellow}{Incorrects} & $1.000$ \\
+				\colorbox{yellow}{Problem View} & $1.000$ \\
+				\colorbox{red}{Opportunity(Rules)} & $0.9639$ \\
+				\colorbox{yellow}{Corrects} & $1.000$ \\
+				\colorbox{yellow}{First Transaction Time} & $1.000$ \\
+				\colorbox{green}{Step Start Time} & $0.9702$ \\
+				\colorbox{yellow}{Hints} & $1.000$ \\
+				\colorbox{red}{KC (KTracedSkills)} & $0.4956$ \\
+				\colorbox{red}{KC(Rules)} & $0.9639$ \\
+				\colorbox{cyan}{Problem Name} & $1.000$ \\
+				\colorbox{cyan}{Problem Hierarchy} & $1.000$ \\
+				\colorbox{red}{Opportunity (KTracedSkills)} & $0.4956$ \\
+				\colorbox{yellow}{Step End Time} & $1.000$ \\
+				\colorbox{yellow}{Correct First Attempt} & $1.000$ \\
+				\colorbox{green}{Step Duration (sec)} & $0.9503$ \\
+				\colorbox{red}{KC(SubSkills)} & $0.7223$ \\
+				\colorbox{green}{Correct Step Duration (sec)} & $0.8160$ \\
+				\colorbox{green}{Correct Transaction Time} & $0.9733$ \\
+				\colorbox{cyan}{Step Name} & $1.000$\\
+				\bottomrule
+			\end{tabular}\label{tab_feature_fraction_b}}		
+\end{figure}
+
+\paragraph{Discussion of the Feature Fractions:}
+
+Having calculated the feature fractions, following observations can be made about the attributes in the two data sets:
+
+\begin{itemize}
+	\item With more than 20 million entries, the data set A contains more than two times more entries than data set B with about 8 million entries.
+	\item The “organizational features” marked \colorbox{cyan}{cyan} describing the name of the student, the name and the hierarchy of the problem, and the name of the step are present for every single entry of both data sets.
+	\item The problem solving features marked \colorbox{yellow}{yellow}, namely the problem view, the corrects and incorrects, the number of hints, and the times for the first transaction, the correct first attempt and the step end times are given for every single entry of both data sets.
+	\item The KC related features are marked \colorbox{red}{red}. Here, several important things have to be noted:
+	\begin{itemize}
+		\item The KC features found in the sets are based on different KC models.
+		\item Hereby, the set B contains three (SubSkills, KTracedSkills, Rules), and the set A contains two (SubSkills, KTracedSkills) different KC models.
+		\item Only a fraction of the steps are mapped to the components of each of the KC models. The Rules model in the set B is the one which is present for the biggest part of the entries.
+	\end{itemize}
+	\item The time features that are not present for every entry in the data set are marked \colorbox{green}{green}. While they are not present in every single data set, they all can be found in nearly or more than 94\% of the data (the feature fractions of “correct step duration” and the “error step duration” features hereby have to be added, as these features are mutually exclusive).
+\end{itemize}
+
+\paragraph{Insights from the feature fraction analysis:}
+
+Based on the results of the feature fraction analysis, I would like to use a subset of the set B as the data set for the remainder of the project. This decision is motivated by multiple circumstances:
+
+\begin{itemize}
+	\item The data set B is small enough so that I can process it on my computer without dividing it up into chunks. This also means that I do not have any restrictions for the machine learning algorithms I will be using, as I do not have to rely on their ability to train with subsets of the data set.
+	\item Using data set B enables the consideration of the “Rules” model without worrying about the entries where the problem is not mapped on the KC components (the Rules - mapping is present for over 96\% of the data).
+	\item Within the chosen set all the features are present for a very big fraction of the entries so that removing entries with missing information does not come at the cost of high information loss.	
+\end{itemize}
+
+For the remainder of this project, I would like to use the data set that I will refer to as the \emph{filtered set}. The filtered set is created from the set B by removing all entries that have missing features for the KC class “Rules” or one of the time related features marked green in the above description of the feature fraction. The creation of this set is done by the script \textbf{\emph{filter\_set\_B.py}}. The feature fraction of the resulting set is illustrated in Tab.\ref{tab_ff_filtered_set}.
+
+\begin{table}[b]
+	\centering
+	\caption{Feature fractions of the filtered set ($8\,035\,374$ entries)\label{tab_ff_filtered_set}}
+	\begin{tabular}{cl}
+		\toprule
+		Attribute name & Feature Fraction \\		
+		\midrule
+		Opportunity(Rules) &1.0\\ 
+		Anon Student Id & 1.0\\ 
+		Incorrects & 1.0 \\
+		Corrects & 1.0\\ 
+		Problem View & 1.0\\ 
+		Correct Transaction Time & 1.0\\ 
+		Correct First Attempt & 1.0 \\
+		Step Duration (sec) & 1.0\\ 
+		Correct Step Duration (sec) & 0.87919193307\\ 
+		Error Step Duration (sec) & 0.12080806693 \\
+		Problem Name & 1.0\\ 
+		KC(Rules) & 1.0 \\
+		Step Start Time & 1.0\\  
+		First Transaction Time & 1.0\\ 
+		Problem Hierarchy & 1.0 \\
+		Hints & 1.0\\ 
+		Step End Time & 1.0\\ 
+		Step Name & 1.0\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+ 
+
+

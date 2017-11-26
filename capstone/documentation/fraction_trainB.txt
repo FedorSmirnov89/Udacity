@@ -11,6 +11,7 @@ Hints : 1.0
 KC(KTracedSkills) : 0.495590742106 
 KC(Rules) : 0.963887749502 
 Problem Name : 1.0 
+number of entries : 8918054 
 Problem Hierarchy : 1.0 
 Opportunity(KTracedSkills) : 0.495590742106 
 Step End Time : 1.0 

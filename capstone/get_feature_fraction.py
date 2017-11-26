@@ -3,7 +3,9 @@ Contains methods for the data analysis and preprocessing that is done before the
 """
 import reader
 import file_information
-import pandas as pd
+
+
+entry_number_attr_name = "number of entries"
 
 
 def find_non_null_fraction(df, attr_name):
@@ -35,36 +37,42 @@ def create_fraction_map(df):
     for attr_name in list(df):
         fraction = find_non_null_fraction(df, attr_name)
         result[attr_name] = fraction
+    result[entry_number_attr_name] = df.shape[0]
     return result
 
 
-def make_frac_file(test=True, a=True):
+def make_frac_file(test=True, a=True, filtered=False):
     """
     Create the fraction maps for the specified data set and print it into a log file
     :param test:
     :param a:
     :return:
     """
+    print "Starting the calculation for the set {}{}".format("test" if test else "train",
+                                                             "A" if a else "B")
 
     if not test and a:
         # work in chunks
         dic = {}
         n_chunks = 0
+        n_entries = 0
         for chunk in reader.read_file(test=test, a=a):
             n_chunks += 1
             print "Current chunk number - {}".format(n_chunks)
+            n_entries += chunk.shape[0]
             for attr_name in list(chunk):
-                if not attr_name in dic:
+                if attr_name not in dic:
                     dic[attr_name] = find_non_null_fraction(chunk, attr_name)
                 else:
                     dic[attr_name] += find_non_null_fraction(chunk, attr_name)
         for key, value in dic.iteritems():
             dic[key] = value / n_chunks
+        dic[entry_number_attr_name] = n_entries
     else:
-        df = reader.read_file(test, a)
+        df = reader.read_file(test, a, filtered=filtered)
         dic = create_fraction_map(df)
 
-    doc_path = file_information.get_doc_path("frac", test, a)
+    doc_path = file_information.get_doc_path("frac", test, a, filtered)
     file_ = open(doc_path, "w")
     for attr_name, fraction in dic.iteritems():
         line = "{} : {} \n".format(attr_name, fraction)

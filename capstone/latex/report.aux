@@ -1,0 +1,84 @@
+\relax 
+\@writefile{toc}{\contentsline {section}{\numberline {1}Definition}{1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Project Overview}{1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Problem Statement}{1}}
+\newlabel{la_problem_statement}{{1.2}{1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces The overall problem can be divided into three subproblems \relax }}{2}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig_sub_problems}{{1}{2}}
+\@writefile{toc}{\contentsline {paragraph}{Problem Description:}{2}}
+\@writefile{toc}{\contentsline {paragraph}{Problem Approach/Task Outline:}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Metrics}{4}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Analysis}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Data Exploration}{5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1}Split of the KDD data set}{5}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.2}Checking for missing attributes}{5}}
+\@writefile{toc}{\contentsline {paragraph}{Discussion of the Feature Fractions:}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Feature fractions\relax }}{6}}
+\newlabel{fig_feature_fractions}{{2}{6}}
+\newlabel{tab_feature_fraction_a}{{2a}{6}}
+\newlabel{sub@tab_feature_fraction_a}{{(a)}{a}}
+\newlabel{tab_feature_fraction_b}{{2b}{6}}
+\newlabel{sub@tab_feature_fraction_b}{{(b)}{b}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Set A ($20\tmspace +\thinmuskip {.1667em}012\tmspace +\thinmuskip {.1667em}498$ entries)}}}{6}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Set B ($8\tmspace +\thinmuskip {.1667em}918\tmspace +\thinmuskip {.1667em}054$ entries)}}}{6}}
+\@writefile{toc}{\contentsline {paragraph}{Insights from the feature fraction analysis:}{6}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Feature fractions of the filtered set ($8\tmspace  +\thinmuskip {.1667em}035\tmspace  +\thinmuskip {.1667em}374$ entries). In this set, all attributes are present for all entries. In this set, we keep $90.10\%$ of the data of Set B, so that the information loss is relatively small.\relax }}{7}}
+\newlabel{tab_ff_filtered_set}{{1}{7}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.3}Checking the number of problem steps processed by each student}{8}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.4}Normalization of the data set}{8}}
+\@writefile{toc}{\contentsline {paragraph}{Note: }{8}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Values describing the distribution of the number of problem steps solved by each student. As can be seen, this number is distributed very unequally.\relax }}{8}}
+\newlabel{tab_number_problem_steps}{{2}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Correlation map of the features used in the averaged set.\relax }}{9}}
+\newlabel{fig_correlations}{{3}{9}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.5}Correlation Check}{9}}
+\@writefile{toc}{\contentsline {paragraph}{Correlation Discussion:}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Methodology and Results}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Scaling}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Feature Reduction with PCA}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}PCA Motivation}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}PCA Result Discussion}{10}}
+\@writefile{toc}{\contentsline {paragraph}{Number of Principal Components}{10}}
+\@writefile{toc}{\contentsline {paragraph}{Feature Distribution - First Principal Component}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces The first principal component is mainly affected by the features \textbf  {Incorrects}, \textbf  {Correct First Attempt}, and \textbf  {Hints}. It, consequently, mainly describes whether the student solved the problems correctly and on his/her own.\relax }}{11}}
+\newlabel{fig_pc1}{{4}{11}}
+\@writefile{toc}{\contentsline {paragraph}{Feature Distribution - Second Principal Component}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Clustering of the Data}{11}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.1}Shape of the Data}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces The second principal component is mainly affected by the features \textbf  {Step Duration}, \textbf  {Error Step Duration}, and \textbf  {Correct Step Duration}. It, consequently, mainly describes how much time the student spent with the problem.\relax }}{12}}
+\newlabel{fig_pc2}{{5}{12}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2}Choosing the Number of Clusters.}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Shape of the data after the PCA step.\relax }}{12}}
+\newlabel{fig_data_shape}{{6}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces The results of the clustering for different numbers of clusters.\relax }}{13}}
+\newlabel{fig_cluster_numbers}{{7}{13}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {2 Clusters}}}{13}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {3 Clusters}}}{13}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {4 Clusters}}}{13}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {5 Clusters}}}{13}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.3}Choosing and Creating a Benchhmark.}{13}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.4}Choosing the Clustering Algorithm.}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces The silhouette score indicates that the most distinct clustering is obtained with 2 clusters.\relax }}{14}}
+\newlabel{fig_silhouette}{{8}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Distribution of the benchmark groups.\relax }}{14}}
+\newlabel{fig_bench}{{9}{14}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {2 Groups (split in the middle)}}}{14}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {5 Groups}}}{14}}
+\@writefile{toc}{\contentsline {paragraph}{Clustering Algorithm Choice Discussion}{14}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.5}Adjusting the Benchmark}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Clustering results when using different algorithms.\relax }}{15}}
+\newlabel{fig_comparison}{{10}{15}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Agglomerative Clustering (23 \%)}}}{15}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Birch (0.3 \%)}}}{15}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(c)}{\ignorespaces {DBSCAN (0.0 \%)}}}{15}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(d)}{\ignorespaces {GMM (4 \%)}}}{15}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(e)}{\ignorespaces {Kmeans (19 \%)}}}{15}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(f)}{\ignorespaces {Spectral Clustering (21 \%)}}}{15}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.6}Evaluating the Algorithms}{15}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.7}Parameter Tuning}{15}}
+\bibdata{literature}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Result Summary}{16}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Conclusion}{16}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Performance comparison of the three algorithms considered for the clustering. The best value achieved in each category is highlighted with a bold font.\relax }}{16}}
+\newlabel{tab_comparison}{{3}{16}}

@@ -104,9 +104,9 @@ Based on the results of the feature fraction analysis, I would like to use a sub
 
 For the remainder of this project, I would like to use the data set that I will refer to as the \emph{filtered set}. The filtered set is created from the set B by removing all entries that have missing features for the KC class “Rules” or one of the time related features marked green in the above description of the feature fraction. The creation of this set is done by the script \textbf{\emph{filter\_set\_B.py}}. The feature fraction of the resulting set is illustrated in Tab.\ref{tab_ff_filtered_set}.
 
-\begin{table}[b]
+\begin{table}[h]
 	\centering
-	\caption{Feature fractions of the filtered set ($8\,035\,374$ entries)\label{tab_ff_filtered_set}}
+	\caption{Feature fractions of the filtered set ($8\,035\,374$ entries)\label{tab_ff_filtered_set}. In this set, all attributes are present for all entries. In this set, we keep $90.10\%$ of the data of Set B, so that the information loss is relatively small.}
 	\begin{tabular}{cl}
 		\toprule
 		Attribute name & Feature Fraction \\		
@@ -133,6 +133,56 @@ For the remainder of this project, I would like to use the data set that I will 
 	\end{tabular}
 \end{table}
 
+ \subsubsection{Checking the number of problem steps processed by each student}
  
+ Before starting to cluster the students, I examine whether each student in the data set has processed the same amount of problem steps. This is important to assure that a certain group of students does not have a disproportionately big influence on the result of the clustering. At the same time, this is the first step of a transformation of the filtered set, which is focused on the problem steps, into a data set with a focus on the students.
+ 
+During the first step I create a set where each student is annotated with the number of problem steps which he/she solved. This is done by the script called \textbf{\emph{get\_problem\_step\_number.py}}. The results can be found in the file \textbf{\emph{student\_step\_ratio.txt}}. The number of problem steps solved by each students can be described by the values illustrated in Tab.~\ref{tab_number_problem_steps}.
+
+\begin{table}[b]
+	\centering
+	\caption{Values describing the distribution of the number of problem steps solved by each student. As can be seen, this number is distributed very unequally.\label{tab_number_problem_steps}}
+	\begin{tabular}{cl}
+		\toprule
+		Characteristic & Value \\		
+		\midrule
+		Overall number of students & $3\,269$ \\
+		Maximum number of solved problem steps & $16\,173$ \\
+		Minimum number of solved problem steps & $1$ \\
+		Average number of solved problem steps & $2\,458.0526$\\
+		Standard deviation & $2\,655.444$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+
+Investigating the number of problem steps solved by each student shows that this number varies greatly for different students. To prevent the situation where students who have processed a bigger number of problem steps gain an disproportionate influence on the clustering, some kind of normalization has to be performed.
+
+\subsubsection{Normalization of the data set}
+Normalizing the filtered set serves two purposes. On the one hand, it addresses the problem that different students have processed different amounts of problem steps. On the other hand, the normalization produces a set where each entry corresponds to a student, as opposed to the filtered set, where each entry corresponds to a problem step. 
+
+The filtered set is normalized using the script \textbf{\emph{make\_student\_data\_set.py}}. The hereby created set is referred to as the \emph{averaged set} and describes each student using the averaged values for the numerical features Incorrects, Problem View, Correct First Attempt, Step Duration (sec), Error Step Duration (sec), Correct Step Duration (sec) and Hints.
+
+\paragraph{Note: } The normalization that I am using can only be applied to numerical values. Consequently, the KC related features, which are represented as one-hot encoded booleans, can not be considered with this approach. While omitting these features comes with a certain information loss, it is \textbf{a)} necessary for the normalization \textbf{b)} probably better to omit these features for the sake of the overall problem, as the KC features offer a very specific description of the mathematical problems they describe and would probably hardly be usable for a tutor. On the other hand, the features that remain in the averaged set are all focused on the correctness of the solution and the time needed for the problem. These features are easily observable for the tutor, regardless of the subject he/she is teaching.
+
+\subsubsection{Correlation Check}
+Having determined the features that I want to use for the clustering, I have performed a correlation check to see whether some of the features have strong dependencies to each other. For this, I used the script \textbf{\emph{preprocess\_script.py}}. The results of the correlation analysis are depicted in Fig.
+
+  \begin{figure}
+  	\centering
+  	\includegraphics[width=\textwidth]{./img/feature_correlation.png}
+  	\caption{Correlation map of the features used in the averaged set.\label{fig_correlations}}
+  \end{figure} 
+  
+ \paragraph{Correlation Discussion:}
+ 
+  The provided image contains a heat map of the correlations between the different values. Cells with a 'warm' color signify a high positive correlation, while 'cold' colors signify negative correlation. Of course, the diagonal of the matrix has the strongest red color. Beside that, there are mainly two facts that can be seen here:
+  
+  \begin{enumerate}
+  	\item Correlation between the Incorrects, the Hints and the Correct First Attempt. Unsurprisingly, these three features correlate with each other. A problem step that is solved correctly on the first attempt does not contribute to the number of incorrects and requires no hints. Consequently, the feature “correct first attempt” has a strong negative correlation with the incorrects and the hints. On the other hand, hints are more likely to be given if the first attempts for a problem solution are incorrect. Consequently, there is a positive correlation between the hints and the number of incorrects.
+  	\item Correlation between the step duration, the correct step duration and the error step duration. Unsurprisingly, the step duration strongly correlates with the durations for both the correct and the incorrect steps. There is also a correlation between the time that students need for a correct and an incorrect step.
+  \end{enumerate}
+  
+While there are some correlations in the data set, I do not think that this justifies dropping features. In both correlation situations, there are situations where dropping one of the correlating features would lead to an information loss.
 
 

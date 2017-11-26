@@ -1,0 +1,542 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  26 NOV 2017 17:12
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**report.tex
+(./report.tex
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 3 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 95.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen105
+\lightrulewidth=\dimen106
+\cmidrulewidth=\dimen107
+\belowrulesep=\dimen108
+\belowbottomsep=\dimen109
+\aboverulesep=\dimen110
+\abovetopsep=\dimen111
+\cmidrulesep=\dimen112
+\cmidrulekern=\dimen113
+\defaultaddspace=\dimen114
+\@cmidla=\count88
+\@cmidlb=\count89
+\@aboverulesep=\dimen115
+\@belowrulesep=\dimen116
+\@thisruleclass=\count90
+\@lastruleclass=\count91
+\@thisrulewidth=\dimen117
+)
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2016/03/03 v2.15a AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks15
+\ex@=\dimen118
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen119
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count92
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count93
+\leftroot@=\count94
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count95
+\DOTSCASE@=\count96
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen120
+LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
+\macc@depth=\count97
+\c@MaxMatrixCols=\count98
+\dotsspace@=\muskip10
+\c@parentequation=\count99
+\dspbrk@lvl=\count100
+\tag@help=\toks16
+\row@=\count101
+\column@=\count102
+\maxfields@=\count103
+\andhelp@=\toks17
+\eqnshift@=\dimen121
+\alignsep@=\dimen122
+\tagshift@=\dimen123
+\tagwidth@=\dimen124
+\totwidth@=\dimen125
+\lineht@=\dimen126
+\@envbody=\toks18
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2735.
+LaTeX Info: Redefining \] on input line 2736.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen127
+\captionmargin@=\dimen128
+\captionwidth=\dimen129
+\caption@tempdima=\dimen130
+\caption@indent=\dimen131
+\caption@parindent=\dimen132
+\caption@hangindent=\dimen133
+)
+\c@ContinuedFloat=\count104
+)
+\c@KVtest=\count105
+\sf@farskip=\skip46
+\sf@captopadj=\dimen134
+\sf@capskip=\skip47
+\sf@nearskip=\skip48
+\c@subfigure=\count106
+\c@subfigure@save=\count107
+\c@lofdepth=\count108
+\c@subtable=\count109
+\c@subtable@save=\count110
+\c@lotdepth=\count111
+\sf@top=\skip49
+\sf@bottom=\skip50
+) (./report.aux)
+\openout1 = `report.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count112
+\scratchdimen=\dimen135
+\scratchbox=\box28
+\nofMPsegments=\count113
+\nofMParguments=\count114
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count115
+\MPscratchDim=\dimen136
+\MPnumerator=\count116
+\makeMPintoPDFobject=\count117
+\everyMPtoPDFconversion=\toks21
+) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+(./definition.tex
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<./img/subProblems.pdf, id=11, 722.7pt x 542.025pt>
+File: ./img/subProblems.pdf Graphic file (type pdf)
+
+<use ./img/subProblems.pdf>
+Package pdftex.def Info: ./img/subProblems.pdf used on input line 23.
+(pdftex.def)             Requested size: 345.0pt x 258.74649pt.
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ [2 <./img/subProblems.pdf>]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ [3]) (./analysis.tex
+[4]
+Overfull \hbox (116.44536pt too wide) in paragraph at lines 47--76
+ [][][][][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 83.
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 83.
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+ [5]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+ [6]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+ [7] [8]
+<./img/feature_correlation.png, id=50, 1675.2186pt x 922.8879pt>
+File: ./img/feature_correlation.png Graphic file (type png)
+
+<use ./img/feature_correlation.png>
+Package pdftex.def Info: ./img/feature_correlation.png used on input line 173.
+(pdftex.def)             Requested size: 345.0pt x 190.05225pt.
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+ [9 <./img/feature_correlation.png>])
+(./methodology.tex <./img/pc1.png, id=56, 1675.2186pt x 922.8879pt>
+File: ./img/pc1.png Graphic file (type png)
+
+<use ./img/pc1.png>
+Package pdftex.def Info: ./img/pc1.png used on input line 23.
+(pdftex.def)             Requested size: 345.0pt x 190.05225pt.
+ [10] <./img/pc2.png, id=60, 1675.2186pt x 922.8879pt>
+File: ./img/pc2.png Graphic file (type png)
+
+<use ./img/pc2.png>
+Package pdftex.def Info: ./img/pc2.png used on input line 33.
+(pdftex.def)             Requested size: 345.0pt x 190.05225pt.
+ [11 <./img/pc1.png>]
+<./img/data_shape.pdf, id=65, 578.16pt x 433.62pt>
+File: ./img/data_shape.pdf Graphic file (type pdf)
+ <use ./img/data_shape.pdf>
+Package pdftex.def Info: ./img/data_shape.pdf used on input line 45.
+(pdftex.def)             Requested size: 172.5pt x 129.37242pt.
+
+[12 <./img/pc2.png> <./img/data_shape.pdf>]
+<./img/n_clusters_2.pdf, id=97, 578.16pt x 433.62pt>
+File: ./img/n_clusters_2.pdf Graphic file (type pdf)
+
+<use ./img/n_clusters_2.pdf>
+Package pdftex.def Info: ./img/n_clusters_2.pdf used on input line 56.
+(pdftex.def)             Requested size: 172.5pt x 129.37242pt.
+
+<./img/n_clusters_3.pdf, id=98, 578.16pt x 433.62pt>
+File: ./img/n_clusters_3.pdf Graphic file (type pdf)
+
+<use ./img/n_clusters_3.pdf>
+Package pdftex.def Info: ./img/n_clusters_3.pdf used on input line 58.
+(pdftex.def)             Requested size: 172.5pt x 129.37242pt.
+
+Overfull \hbox (6.66666pt too wide) in paragraph at lines 56--59
+ [][][] 
+ []
+
+<./img/n_clusters_4.pdf, id=99, 578.16pt x 433.62pt>
+File: ./img/n_clusters_4.pdf Graphic file (type pdf)
+
+<use ./img/n_clusters_4.pdf>
+Package pdftex.def Info: ./img/n_clusters_4.pdf used on input line 62.
+(pdftex.def)             Requested size: 172.5pt x 129.37242pt.
+
+<./img/n_clusters_5.pdf, id=100, 578.16pt x 433.62pt>
+File: ./img/n_clusters_5.pdf Graphic file (type pdf)
+
+<use ./img/n_clusters_5.pdf>
+Package pdftex.def Info: ./img/n_clusters_5.pdf used on input line 64.
+(pdftex.def)             Requested size: 172.5pt x 129.37242pt.
+
+Overfull \hbox (6.66666pt too wide) in paragraph at lines 62--65
+ [][][] 
+ []
+
+<./img/silhouette.pdf, id=101, 578.16pt x 433.62pt>
+File: ./img/silhouette.pdf Graphic file (type pdf)
+ <use ./img/silhouette.pdf>
+Package pdftex.def Info: ./img/silhouette.pdf used on input line 73.
+(pdftex.def)             Requested size: 172.5pt x 129.37242pt.
+
+<./img/bench_2.pdf, id=102, 578.16pt x 433.62pt>
+File: ./img/bench_2.pdf Graphic file (type pdf)
+ <use ./img/bench_2.pdf>
+Package pdftex.def Info: ./img/bench_2.pdf used on input line 84.
+(pdftex.def)             Requested size: 172.5pt x 129.37242pt.
+
+<./img/bench_5.pdf, id=103, 578.16pt x 433.62pt>
+File: ./img/bench_5.pdf Graphic file (type pdf)
+ <use ./img/bench_5.pdf>
+Package pdftex.def Info: ./img/bench_5.pdf used on input line 86.
+(pdftex.def)             Requested size: 172.5pt x 129.37242pt.
+
+Overfull \hbox (6.66666pt too wide) in paragraph at lines 84--87
+ [][][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<./img/comp_Agglomerative_23.pdf, id=104, 578.16pt x 433.62pt>
+File: ./img/comp_Agglomerative_23.pdf Graphic file (type pdf)
+
+<use ./img/comp_Agglomerative_23.pdf>
+Package pdftex.def Info: ./img/comp_Agglomerative_23.pdf used on input line 98.
+
+(pdftex.def)             Requested size: 110.40253pt x 82.79887pt.
+
+<./img/comp_Birch_003.pdf, id=105, 578.16pt x 433.62pt>
+File: ./img/comp_Birch_003.pdf Graphic file (type pdf)
+
+<use ./img/comp_Birch_003.pdf>
+Package pdftex.def Info: ./img/comp_Birch_003.pdf used on input line 100.
+(pdftex.def)             Requested size: 110.40253pt x 82.79887pt.
+
+<./img/comp_DBSCAN.pdf, id=106, 578.16pt x 433.62pt>
+File: ./img/comp_DBSCAN.pdf Graphic file (type pdf)
+
+<use ./img/comp_DBSCAN.pdf>
+Package pdftex.def Info: ./img/comp_DBSCAN.pdf used on input line 102.
+(pdftex.def)             Requested size: 110.40253pt x 82.79887pt.
+
+<./img/comp_GMM_04.pdf, id=107, 578.16pt x 433.62pt>
+File: ./img/comp_GMM_04.pdf Graphic file (type pdf)
+
+<use ./img/comp_GMM_04.pdf>
+Package pdftex.def Info: ./img/comp_GMM_04.pdf used on input line 105.
+(pdftex.def)             Requested size: 110.40253pt x 82.79887pt.
+
+<./img/comp_Kmeans_19.pdf, id=108, 578.16pt x 433.62pt>
+File: ./img/comp_Kmeans_19.pdf Graphic file (type pdf)
+
+<use ./img/comp_Kmeans_19.pdf>
+Package pdftex.def Info: ./img/comp_Kmeans_19.pdf used on input line 107.
+(pdftex.def)             Requested size: 110.40253pt x 82.79887pt.
+
+<./img/comp_Spectral_21.pdf, id=109, 578.16pt x 433.62pt>
+File: ./img/comp_Spectral_21.pdf Graphic file (type pdf)
+
+<use ./img/comp_Spectral_21.pdf>
+Package pdftex.def Info: ./img/comp_Spectral_21.pdf used on input line 109.
+(pdftex.def)             Requested size: 110.40253pt x 82.79887pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[13 <./img/n_clusters_2.pdf> <./img/n_clusters_3.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./img/n_clusters_3.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
+> <./img/n_clusters_4.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./img/n_clusters_4.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
+> <./img/n_clusters_5.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./img/n_clusters_5.pdf): PDF inclusion:
+ multiple pdfs with page group included in a single page
+>] [14 <./img/silhouette.pdf> <./img/bench_2.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./img/bench_2.pdf): PDF inclusion: mult
+iple pdfs with page group included in a single page
+> <./img/bench_5.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./img/bench_5.pdf): PDF inclusion: mult
+iple pdfs with page group included in a single page
+>] [15 <./img/comp_Agglomerative_23.pdf> <./img/comp_Birch_003.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./img/comp_Birch_003.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
+> <./img/comp_DBSCAN.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./img/comp_DBSCAN.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+> <./img/comp_GMM_04.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./img/comp_GMM_04.pdf): PDF inclusion: 
+multiple pdfs with page group included in a single page
+> <./img/comp_Kmeans_19.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./img/comp_Kmeans_19.pdf): PDF inclusio
+n: multiple pdfs with page group included in a single page
+> <./img/comp_Spectral_21.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./img/comp_Spectral_21.pdf): PDF inclus
+ion: multiple pdfs with page group included in a single page
+>]) (./conclusion.tex) (./report.bbl) [16] (./report.aux) ) 
+Here is how much of TeX's memory you used:
+ 3989 strings out of 494953
+ 58841 string characters out of 6180977
+ 132063 words of memory out of 5000000
+ 7198 multiletter control sequences out of 15000+600000
+ 12177 words of font info for 43 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 44i,14n,49p,1496b,396s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on report.pdf (16 pages, 1138765 bytes).
+PDF statistics:
+ 592 PDF objects out of 1000 (max. 8388607)
+ 154 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+

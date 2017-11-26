@@ -1,0 +1,2 @@
+Overall, there are 3269 students in the filtered data set
+Maximal: 16173; Minimum: 1; Average: 2458.05261548; Deviation:2655.44403147

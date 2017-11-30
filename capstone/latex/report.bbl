@@ -1,0 +1,28 @@
+\newcommand{\noopsort}[1]{}
+\begin{thebibliography}{1}
+
+\bibitem{2sigma}
+{\sc Bloom, B.~S.}
+\newblock The 2 sigma problem: The search for methods of group instruction as
+  effective as one-to-one tutoring.
+\newblock {\em Educational researcher 13}, 6 (1984), 4--16.
+
+\bibitem{machine_learning1}
+{\sc Cen, H., Koedinger, K.~R., and Junker, B.}
+\newblock Is over practice necessary?-improving learning efficiency with the
+  cognitive tutor through educational data mining.
+\newblock {\em Frontiers in Artificial Intelligence and Applications 158\/}
+  (2007), 511.
+
+\bibitem{equation}
+{\sc Draney, K.~L., Pirolli, P., and Wilson, M.}
+\newblock A measurement model for a complex cognitive skill.
+\newblock {\em Cognitively diagnostic assessment\/} (1995), 103--125.
+
+\bibitem{machine_learning2}
+{\sc Stamper, J., and Koedinger, K.}
+\newblock Human-machine student model discovery and improvement using datashop.
+\newblock In {\em Artificial intelligence in education\/} (2011), Springer,
+  pp.~353--360.
+
+\end{thebibliography}

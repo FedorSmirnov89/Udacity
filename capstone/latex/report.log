@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  26 NOV 2017 17:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.24)  30 NOV 2017 22:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -262,51 +262,91 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-(./definition.tex
+(./definition.tex [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<./img/data_model.pdf, id=10, 770.88pt x 578.16pt>
+File: ./img/data_model.pdf Graphic file (type pdf)
+ <use ./img/data_model.pdf>
+Package pdftex.def Info: ./img/data_model.pdf used on input line 23.
+(pdftex.def)             Requested size: 345.0pt x 258.74925pt.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [1
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<./img/subProblems.pdf, id=11, 722.7pt x 542.025pt>
-File: ./img/subProblems.pdf Graphic file (type pdf)
+[2 <./img/data_model.pdf>] <./img/kc_opt.pdf, id=29, 722.7pt x 542.025pt>
+File: ./img/kc_opt.pdf Graphic file (type pdf)
 
-<use ./img/subProblems.pdf>
-Package pdftex.def Info: ./img/subProblems.pdf used on input line 23.
+<use ./img/kc_opt.pdf>
+Package pdftex.def Info: ./img/kc_opt.pdf used on input line 43.
 (pdftex.def)             Requested size: 345.0pt x 258.74649pt.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [2 <./img/subProblems.pdf>]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ô in font cmr10!
- [3]) (./analysis.tex
-[4]
-Overfull \hbox (116.44536pt too wide) in paragraph at lines 47--76
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ [3 <./img/kc_opt.pdf>]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+
+<./img/vision.pdf, id=44, 722.7pt x 542.025pt>
+File: ./img/vision.pdf Graphic file (type pdf)
+ <use ./img/vision.pdf>
+Package pdftex.def Info: ./img/vision.pdf used on input line 61.
+(pdftex.def)             Requested size: 345.0pt x 258.74649pt.
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+ [4 <./img/vision.pdf>] <./img/subProblems.pdf, id=59, 722.7pt x 542.025pt>
+File: ./img/subProblems.pdf Graphic file (type pdf)
+
+<use ./img/subProblems.pdf>
+Package pdftex.def Info: ./img/subProblems.pdf used on input line 78.
+(pdftex.def)             Requested size: 345.0pt x 258.74649pt.
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ [5 <./img/subProblems.pdf>]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ô in font cmr10!
+ [6] [7])
+(./analysis.tex
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 15.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
+
+[8] [9]
+Overfull \hbox (116.44536pt too wide) in paragraph at lines 69--98
  [][][][][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 83.
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 83.
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ú in font cmr10!
-Missing character: There is no ‚ in font cmr10!
-Missing character: There is no Ä in font cmr10!
-Missing character: There is no ù in font cmr10!
- [5]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
@@ -319,25 +359,32 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [6]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
+[10]
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [7] [8]
-<./img/feature_correlation.png, id=50, 1675.2186pt x 922.8879pt>
+ [11]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+ [12] [13]
+<./img/feature_correlation.png, id=104, 1675.2186pt x 922.8879pt>
 File: ./img/feature_correlation.png Graphic file (type png)
 
 <use ./img/feature_correlation.png>
-Package pdftex.def Info: ./img/feature_correlation.png used on input line 173.
+Package pdftex.def Info: ./img/feature_correlation.png used on input line 195.
 (pdftex.def)             Requested size: 345.0pt x 190.05225pt.
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
@@ -345,35 +392,34 @@ Missing character: There is no ú in font cmr10!
 Missing character: There is no ‚ in font cmr10!
 Missing character: There is no Ä in font cmr10!
 Missing character: There is no ù in font cmr10!
- [9 <./img/feature_correlation.png>])
-(./methodology.tex <./img/pc1.png, id=56, 1675.2186pt x 922.8879pt>
+) (./methodology.tex [14 <./img/feature_correlation.png>] <./img/pc1.png, id=11
+0, 1675.2186pt x 922.8879pt>
 File: ./img/pc1.png Graphic file (type png)
 
 <use ./img/pc1.png>
 Package pdftex.def Info: ./img/pc1.png used on input line 23.
 (pdftex.def)             Requested size: 345.0pt x 190.05225pt.
- [10] <./img/pc2.png, id=60, 1675.2186pt x 922.8879pt>
+ [15] <./img/pc2.png, id=114, 1675.2186pt x 922.8879pt>
 File: ./img/pc2.png Graphic file (type png)
 
 <use ./img/pc2.png>
 Package pdftex.def Info: ./img/pc2.png used on input line 33.
 (pdftex.def)             Requested size: 345.0pt x 190.05225pt.
- [11 <./img/pc1.png>]
-<./img/data_shape.pdf, id=65, 578.16pt x 433.62pt>
+ <./img/data_shape.pdf, id=115, 578.16pt x 433.62pt>
 File: ./img/data_shape.pdf Graphic file (type pdf)
- <use ./img/data_shape.pdf>
+
+<use ./img/data_shape.pdf>
 Package pdftex.def Info: ./img/data_shape.pdf used on input line 45.
 (pdftex.def)             Requested size: 172.5pt x 129.37242pt.
-
-[12 <./img/pc2.png> <./img/data_shape.pdf>]
-<./img/n_clusters_2.pdf, id=97, 578.16pt x 433.62pt>
+ [16 <./img/pc1.png>] [17 <./img/pc2.png> <./img/data_shape.pdf>] <./img/n_clus
+ters_2.pdf, id=151, 578.16pt x 433.62pt>
 File: ./img/n_clusters_2.pdf Graphic file (type pdf)
 
 <use ./img/n_clusters_2.pdf>
 Package pdftex.def Info: ./img/n_clusters_2.pdf used on input line 56.
 (pdftex.def)             Requested size: 172.5pt x 129.37242pt.
 
-<./img/n_clusters_3.pdf, id=98, 578.16pt x 433.62pt>
+<./img/n_clusters_3.pdf, id=152, 578.16pt x 433.62pt>
 File: ./img/n_clusters_3.pdf Graphic file (type pdf)
 
 <use ./img/n_clusters_3.pdf>
@@ -384,14 +430,14 @@ Overfull \hbox (6.66666pt too wide) in paragraph at lines 56--59
  [][][] 
  []
 
-<./img/n_clusters_4.pdf, id=99, 578.16pt x 433.62pt>
+<./img/n_clusters_4.pdf, id=153, 578.16pt x 433.62pt>
 File: ./img/n_clusters_4.pdf Graphic file (type pdf)
 
 <use ./img/n_clusters_4.pdf>
 Package pdftex.def Info: ./img/n_clusters_4.pdf used on input line 62.
 (pdftex.def)             Requested size: 172.5pt x 129.37242pt.
 
-<./img/n_clusters_5.pdf, id=100, 578.16pt x 433.62pt>
+<./img/n_clusters_5.pdf, id=154, 578.16pt x 433.62pt>
 File: ./img/n_clusters_5.pdf Graphic file (type pdf)
 
 <use ./img/n_clusters_5.pdf>
@@ -402,19 +448,19 @@ Overfull \hbox (6.66666pt too wide) in paragraph at lines 62--65
  [][][] 
  []
 
-<./img/silhouette.pdf, id=101, 578.16pt x 433.62pt>
+<./img/silhouette.pdf, id=155, 578.16pt x 433.62pt>
 File: ./img/silhouette.pdf Graphic file (type pdf)
  <use ./img/silhouette.pdf>
 Package pdftex.def Info: ./img/silhouette.pdf used on input line 73.
 (pdftex.def)             Requested size: 172.5pt x 129.37242pt.
 
-<./img/bench_2.pdf, id=102, 578.16pt x 433.62pt>
+<./img/bench_2.pdf, id=156, 578.16pt x 433.62pt>
 File: ./img/bench_2.pdf Graphic file (type pdf)
  <use ./img/bench_2.pdf>
 Package pdftex.def Info: ./img/bench_2.pdf used on input line 84.
 (pdftex.def)             Requested size: 172.5pt x 129.37242pt.
 
-<./img/bench_5.pdf, id=103, 578.16pt x 433.62pt>
+<./img/bench_5.pdf, id=157, 578.16pt x 433.62pt>
 File: ./img/bench_5.pdf Graphic file (type pdf)
  <use ./img/bench_5.pdf>
 Package pdftex.def Info: ./img/bench_5.pdf used on input line 86.
@@ -427,53 +473,7 @@ Overfull \hbox (6.66666pt too wide) in paragraph at lines 84--87
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./img/comp_Agglomerative_23.pdf, id=104, 578.16pt x 433.62pt>
-File: ./img/comp_Agglomerative_23.pdf Graphic file (type pdf)
-
-<use ./img/comp_Agglomerative_23.pdf>
-Package pdftex.def Info: ./img/comp_Agglomerative_23.pdf used on input line 98.
-
-(pdftex.def)             Requested size: 110.40253pt x 82.79887pt.
-
-<./img/comp_Birch_003.pdf, id=105, 578.16pt x 433.62pt>
-File: ./img/comp_Birch_003.pdf Graphic file (type pdf)
-
-<use ./img/comp_Birch_003.pdf>
-Package pdftex.def Info: ./img/comp_Birch_003.pdf used on input line 100.
-(pdftex.def)             Requested size: 110.40253pt x 82.79887pt.
-
-<./img/comp_DBSCAN.pdf, id=106, 578.16pt x 433.62pt>
-File: ./img/comp_DBSCAN.pdf Graphic file (type pdf)
-
-<use ./img/comp_DBSCAN.pdf>
-Package pdftex.def Info: ./img/comp_DBSCAN.pdf used on input line 102.
-(pdftex.def)             Requested size: 110.40253pt x 82.79887pt.
-
-<./img/comp_GMM_04.pdf, id=107, 578.16pt x 433.62pt>
-File: ./img/comp_GMM_04.pdf Graphic file (type pdf)
-
-<use ./img/comp_GMM_04.pdf>
-Package pdftex.def Info: ./img/comp_GMM_04.pdf used on input line 105.
-(pdftex.def)             Requested size: 110.40253pt x 82.79887pt.
-
-<./img/comp_Kmeans_19.pdf, id=108, 578.16pt x 433.62pt>
-File: ./img/comp_Kmeans_19.pdf Graphic file (type pdf)
-
-<use ./img/comp_Kmeans_19.pdf>
-Package pdftex.def Info: ./img/comp_Kmeans_19.pdf used on input line 107.
-(pdftex.def)             Requested size: 110.40253pt x 82.79887pt.
-
-<./img/comp_Spectral_21.pdf, id=109, 578.16pt x 433.62pt>
-File: ./img/comp_Spectral_21.pdf Graphic file (type pdf)
-
-<use ./img/comp_Spectral_21.pdf>
-Package pdftex.def Info: ./img/comp_Spectral_21.pdf used on input line 109.
-(pdftex.def)             Requested size: 110.40253pt x 82.79887pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[13 <./img/n_clusters_2.pdf> <./img/n_clusters_3.pdf
+[18 <./img/n_clusters_2.pdf> <./img/n_clusters_3.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/n_clusters_3.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
@@ -485,7 +485,53 @@ pdfTeX warning: /usr/bin/pdflatex (file ./img/n_clusters_4.pdf): PDF inclusion:
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/n_clusters_5.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
->] [14 <./img/silhouette.pdf> <./img/bench_2.pdf
+>] <./img/comp_Agglomerative_23.pdf, id=279, 578.16pt x 433.62pt>
+File: ./img/comp_Agglomerative_23.pdf Graphic file (type pdf)
+
+<use ./img/comp_Agglomerative_23.pdf>
+Package pdftex.def Info: ./img/comp_Agglomerative_23.pdf used on input line 98.
+
+(pdftex.def)             Requested size: 110.40253pt x 82.79887pt.
+
+<./img/comp_Birch_003.pdf, id=280, 578.16pt x 433.62pt>
+File: ./img/comp_Birch_003.pdf Graphic file (type pdf)
+
+<use ./img/comp_Birch_003.pdf>
+Package pdftex.def Info: ./img/comp_Birch_003.pdf used on input line 100.
+(pdftex.def)             Requested size: 110.40253pt x 82.79887pt.
+
+<./img/comp_DBSCAN.pdf, id=281, 578.16pt x 433.62pt>
+File: ./img/comp_DBSCAN.pdf Graphic file (type pdf)
+
+<use ./img/comp_DBSCAN.pdf>
+Package pdftex.def Info: ./img/comp_DBSCAN.pdf used on input line 102.
+(pdftex.def)             Requested size: 110.40253pt x 82.79887pt.
+
+<./img/comp_GMM_04.pdf, id=282, 578.16pt x 433.62pt>
+File: ./img/comp_GMM_04.pdf Graphic file (type pdf)
+
+<use ./img/comp_GMM_04.pdf>
+Package pdftex.def Info: ./img/comp_GMM_04.pdf used on input line 105.
+(pdftex.def)             Requested size: 110.40253pt x 82.79887pt.
+
+<./img/comp_Kmeans_19.pdf, id=283, 578.16pt x 433.62pt>
+File: ./img/comp_Kmeans_19.pdf Graphic file (type pdf)
+
+<use ./img/comp_Kmeans_19.pdf>
+Package pdftex.def Info: ./img/comp_Kmeans_19.pdf used on input line 107.
+(pdftex.def)             Requested size: 110.40253pt x 82.79887pt.
+
+<./img/comp_Spectral_21.pdf, id=284, 578.16pt x 433.62pt>
+File: ./img/comp_Spectral_21.pdf Graphic file (type pdf)
+
+<use ./img/comp_Spectral_21.pdf>
+Package pdftex.def Info: ./img/comp_Spectral_21.pdf used on input line 109.
+(pdftex.def)             Requested size: 110.40253pt x 82.79887pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[19 <./img/silhouette.pdf> <./img/bench_2.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/bench_2.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
@@ -493,7 +539,7 @@ iple pdfs with page group included in a single page
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/bench_5.pdf): PDF inclusion: mult
 iple pdfs with page group included in a single page
->] [15 <./img/comp_Agglomerative_23.pdf> <./img/comp_Birch_003.pdf
+>] [20 <./img/comp_Agglomerative_23.pdf> <./img/comp_Birch_003.pdf
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/comp_Birch_003.pdf): PDF inclusio
 n: multiple pdfs with page group included in a single page
@@ -513,30 +559,40 @@ n: multiple pdfs with page group included in a single page
 
 pdfTeX warning: /usr/bin/pdflatex (file ./img/comp_Spectral_21.pdf): PDF inclus
 ion: multiple pdfs with page group included in a single page
->]) (./conclusion.tex) (./report.bbl) [16] (./report.aux) ) 
+>] [21]) (./conclusion.tex [22]
+<./img/explViz.pdf, id=613, 722.7pt x 406.51875pt>
+File: ./img/explViz.pdf Graphic file (type pdf)
+ <use ./img/explViz.pdf>
+Package pdftex.def Info: ./img/explViz.pdf used on input line 8.
+(pdftex.def)             Requested size: 345.0pt x 194.05986pt.
+
+[23 <./img/explViz.pdf>] [24]) (./report.bbl) [25] (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 3989 strings out of 494953
- 58841 string characters out of 6180977
- 132063 words of memory out of 5000000
- 7198 multiletter control sequences out of 15000+600000
- 12177 words of font info for 43 fonts, out of 8000000 for 9000
+ 4021 strings out of 494953
+ 59394 string characters out of 6180977
+ 132127 words of memory out of 5000000
+ 7225 multiletter control sequences out of 15000+600000
+ 12478 words of font info for 44 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  44i,14n,49p,1496b,396s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (16 pages, 1138765 bytes).
+</usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on report.pdf (25 pages, 1291155 bytes).
 PDF statistics:
- 592 PDF objects out of 1000 (max. 8388607)
- 154 compressed objects within 2 object streams
+ 682 PDF objects out of 1000 (max. 8388607)
+ 219 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
 

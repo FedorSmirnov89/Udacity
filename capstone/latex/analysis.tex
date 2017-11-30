@@ -1,5 +1,27 @@
-\newpage
 \section{Analysis}
+
+In this section, I first motivate the algorithms and techniques that I use for the problem addressed in this project. After this, I present an exploration of the data set used in the project. 
+
+\subsection{Algorithms and Techniques Discussion}
+To create software for the classification of students, I want to first reduce the number of features by applying the principal components analysis technique. After this, I will use clustering algorithms to group the students into different groups. In the following, I will briefly explain the general idea of these techniques and motivate their usage in this project. 
+
+\subsubsection{Principal Components Analysis (PCA)}
+
+\paragraph{General Idea.} Principal components analysis is a technique that is frequently used for feature engineering as a preprocessing step for the application of machine learning algorithms. Hereby, the goal is to reduce the number of used features while minimizing the amount of information lost during this reduction process. PCA is performed by creating new features, the so called \emph{principal components} (PCs) that are calculated by a weighted sum of the original features. The weighting factor of each feature hereby depends on the variance of this feature across the data set. Features with a bigger variance are likely to be weighted higher. The underlying idea is that features that are nearly the same across the entire data set (and therefore have a low variance) are unlikely to be useful during a prediction, as they can not be used to distinguish different groups within the data set.
+
+\paragraph{Motivation for the Usage in this project.} There are several reasons why I would like to use PCA before applying clustering algorithms:
+
+\begin{itemize}
+	\item \textbf{Reducing the number of features}. When the amount of the available data is limited (which is the case in this project), reducing the number of the features oftentimes improves the performance of machine learning algorithms.
+	\item \textbf{Enabling a visualization}. An important advantage of working with 3 or less features is the possibility of a visualization with three or less dimensions that is easily understandable for humans. In this project, we do not have a golden model benchmark (as stated in the analysis section, I would actually expect some deviation from the correctness list). Consequently, it is important to be able to visualize and interpret the results of the clustering. 
+	\item \textbf{Finding hidden features}. The PCs found during the PCA oftentimes represent hidden features, that is features which may by rather abstract and not directly measurable, but which at the same time represent characteristics with a high problem relevance (for example the family friendliness of a neighborhood can be a hidden feature when predicting the house prices in the neighborhood). For the problem at hand, these hidden features may be very useful for a usage by the tutors. For example, it is much easier to say whether a student is generally fast when solving problems rather than to specify the exact times he/she needed for the problems.   
+\end{itemize}
+
+\subsubsection{Clustering Algorithms}
+
+\paragraph{General Idea.} Clustering describes a group of algorithms from the domain of unsupervised learning. The goal of a clustering algorithm is to identify groups within the provided data objects. To insert problem specific knowledge, clustering algorithms are typically used with a so-called \emph{distance function}. This function takes two data objects and calculates a so-called distance between these. A high distance hereby indicates that the two data objects are not very similar. The goal of clustering algorithms is then to find groups of similar data objects, e.g., of objects with a small distance between them. The exact implementation and the shape of the built clusters depends on the actual algorithm that is being used for clustering.  
+
+\paragraph{Motivation for the Usage in this project.} Unsupervised learning techniques are typically used in situations where it is difficult to label the data. As in our case, the overall problem of the teaching effectiveness is rather complex, I think that it is not enough to consider just one feature of the students, like, e.g., the average correctness, during the student classification. On the other hand, I am not sure how a certain combination of the features present in the data set affects the learning abilities of the students. Clustering, consequently, seems to be a good choice, as it is likely to divide the students into groups based on measurable features. I also hope to gain additional insight into the problem by investigating the clustering results and their correlation with the features of the students.
 
 \subsection{Data Exploration}
 

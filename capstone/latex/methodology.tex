@@ -141,5 +141,36 @@ To compare the chosen algorithms, I evaluate them against the benchmark and meas
 \subsubsection{Parameter Tuning}
 In the last step I used the script \textbf{\emph{tune\_parameters.py}} to experiment with different parameter settings of the Kmeans algorithm. However, the changing the parameters had no significant effect on the performance in relation to the benchmark. Changing the number of Kmeans runs and the maximum number of iterations in each run did not have any effect at all, so that it can be assumed that the algorithms displays a solid convergence. Changing the initialization technique had a small and mixed effect, improving some of the performance characteristics while making other characteristics worse. All in all, tuning the parameters does not provide an improved result in comparison to the default settings. 
 
+\subsubsection{Robustness Test}
+To test the robustness of the created machine learning pipeline, I implemented a test, similar to those performed for the supervised classification. For this, I created a training and a test set consisting of the PC data of the students from the two principal components set. The training set is hereby created by randomly selecting 320 (roughly 10\% of the original set) student entries, while the training set contains all remaining entries. For convenience, I also create the test bench set, which contains the correction based classification for the 320 students selected for the test. The creation of these data sets is done using the script \textbf{\emph{create\_data\_set.py}}.
+
+The robustness is then tested by training the KNN clusterer with the training data and then comparing the predictions the trained clusterer makes for the test data (that was not used during training) with the correction based classification of the test data. This is done by the script \textbf{\emph{test\_robustness.py}}. To evaluate the robustness, I use the same metrics as for the evaluation of the algorithm itself.
+
+The results of the robustness test can be found in Tab.~\ref{tab_robustness}. The test values are very similar to the values obtained when using the full training set. The robustness test, hence, seems to indicate that the model created in this project is robust when confronted with unknown data and can be used as a part of the framework for exercise design (at least if the data set that this project is working with is representative for the students and problems from the computer science area).
+
+\begin{table}[b]
+	\centering
+	\caption{Results of the robustness test.\label{tab_robustness}}
+	\begin{tabular}{lll}
+		\toprule
+		Performance Characteristic & Absolute Value & Delta to Training Value \\		
+		\midrule
+		True Positives & $4.375\%$ & $-0.519\%$\\
+		True Negatives & $68.12\%$ & $+1.71\%$\\
+		False Positives & $14.38\%$ & $+0.8\%$\\
+		False Negatives & $13.12\%$ & $-5.36\%$\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
 \subsection{Result Summary}
-As a result of the data preprocessing and a comparison of different clustering algorithms, I have created a pipeline that fits a Kmeans algorithm to the provided student data. The fitted algorithm predicts whether a student's performance will be within the top 20\%. Compared with the presented benchmark, this predictor has an accuracy of 70\%. The relatively low accuracy probably results from the fact that the used benchmark is not a golden model, but instead classifies based on a single feature. As the created predictor takes many more features, in particular the time for the solution of a problem, into account, it is to be expected that its results differ from the chosen benchmark.
+As a result of the data preprocessing and a comparison of different clustering algorithms, I have created a pipeline that fits a Kmeans algorithm to the provided student data. The fitted algorithm predicts whether a student's performance will be within the top 20\%. Compared with the presented benchmark, this predictor has an accuracy of 70\% and seems to be robust in the presence of unknown data. The relatively low accuracy probably results from the fact that the used benchmark is not a golden model, but instead classifies based on a single feature. As the created predictor takes many more features, in particular the time for the solution of a problem, into account, it is to be expected that its results differ from the chosen benchmark.
+
+\subsection{Challenges during the Implementation}
+During the implementation of the preprocessing and machine pipeline described in this section, I have encountered one difficulty.
+
+%The first difficulty occurred during the creation of the student-centered data set. There, I have seen that, in the created set, some few students had nan entries for either the \emph{error step duration} of the \emph{correct step duration} feature. After some reflection, I have come to the conclusion that those were the students who either got all the problems right (in this case, the error step duration is a nan) or got all the problems wrong (then, the correct step duration is a nan). As the nan caused errors during the min-max scaling, I had to replace the nans in these cases by a value that \textbf{I} can be processed during min-max scaling and \textbf{II} can not be confused with one of the non-nan values. For these reasons, I decided to enter a -1 in these cases. 
+
+The difficulty occurred during the calculation of the accuracy values that I used to measure the correlation between the clustering and a classification based on the average correctness. While the correctness function always assigned a 1 to the students in the upper part of the list, the clustering algorithms just separated the students into two groups. The labels for the individual groups, however, were not reproducible (sometimes, the 'better' students were assigned a 1 and at other times, they were assigned a 0). This made it difficult to automatically calculate the accuracy values. After making sure that the actual clustering always provides the same results regardless of the chosen labels and that it always predicts roughly 20\% students as gifted, I implemented a dynamic labeling, where the cluster with the bigger size (the less able students) was labeled with a 0, while the cluster with the smaller size (the gifted students) was labeled with a 1. This solved the problem.  
+
+
